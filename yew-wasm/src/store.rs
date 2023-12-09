@@ -48,10 +48,3 @@ pub fn set_show_alert(message: String, dispatch: Dispatch<Store>) {
         };
     })
 }
-
-pub fn set_hide_alert(dispatch: Dispatch<Store>) {
-    dispatch.reduce_mut(move |store| {
-        store.alert_input.show_alert = false;
-    })
-}
-
