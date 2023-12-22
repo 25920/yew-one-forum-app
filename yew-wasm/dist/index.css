@@ -570,20 +570,12 @@ video {
   left: 1.25rem;
 }
 
-.right-4{
-  right: 1rem;
-}
-
 .top-0{
   top: 0px;
 }
 
 .top-1\/2{
   top: 50%;
-}
-
-.top-2{
-  top: 0.5rem;
 }
 
 .top-5{
@@ -827,10 +819,6 @@ video {
 .bg-pink-500{
   --tw-bg-opacity: 1;
   background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .bg-white{

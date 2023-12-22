@@ -8,6 +8,13 @@ pub struct Feedback {
     pub rating: u8,
 }
 
+#[derive(Debug, Deserialize, Serialize, PartialEq, Clone)]
+pub struct Post { // anonymous
+    pub id: uuid::Uuid,
+    pub text: String,
+    pub num_post: String,
+}
+
 #[derive(Debug, PartialEq, Serialize, Deserialize, Default, Clone)]
 pub struct AlertInput {
     pub show_alert: bool,
@@ -25,12 +32,6 @@ pub struct Store {
 pub fn set_feedback(feedback: Feedback, dispatch: Dispatch<Store>) {
     dispatch.reduce_mut(move |store| {
         store.feedbacks.insert(0, feedback);
-    })
-}
-
-pub fn delete_feedback(id: uuid::Uuid, dispatch: Dispatch<Store>) {
-    dispatch.reduce_mut(move |store| {
-        store.feedbacks.retain(|f| f.id != id);
     })
 }
 

@@ -7,7 +7,8 @@ use crate::store::Store;
 pub fn FeedbackStats() -> Html {
     let (store, _) = use_store::<Store>();
     let count = store.feedbacks.len();
-    let sum: u32 = store.feedbacks.iter().map(|f| u32::from(f.rating)).sum();
+    let sum: u32 = store.feedbacks.iter().map(|f| 
+        u32::from(f.rating)).sum();
 
     let average = if count > 0 {
         format!("{:.2}", sum as f32 / count as f32)
