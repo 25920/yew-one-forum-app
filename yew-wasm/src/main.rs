@@ -2,25 +2,49 @@ mod components;
 mod store;
 
 use components::{
-    feedback::FeedbackForm,
-    list::FeedbackList,
-    display::FeedbackStats,
+    post::PostForm,
+    idea::PostList,
+    report::FeedBackIndex,
+    error::Error,
 };
 use store::Store;
 use yew::prelude::*;
 use yewdux::prelude::*;
+use yew_router::prelude::*;
+
+#[derive(Clone, Routable, PartialEq)]
+enum Route {
+    #[at("/")]
+    Home,
+    #[at("/feedback")]
+    Report,
+    #[not_found]
+    #[at("/404")]
+    NotFound,
+}
+
+fn switch(routes: Route) -> Html {
+    match routes {
+        Route::Home => html! {
+            <Home />
+        },
+        Route::Report => html! {
+            <FeedBackIndex />
+        },
+        Route::NotFound => html! { <Error/> },
+    }
+}
 
 #[function_component]
-fn App() -> Html {
+fn Home() -> Html {
     let (store, _) = use_store::<Store>();
     let loading = &store.loading;
 
     html! {
         <>
             <main class="md:container mt-24 px-5">
-                <FeedbackForm />
-                <FeedbackStats />
-                <FeedbackList />
+                <PostForm />
+                <PostList />
             </main>
             if *loading {
                 <div
@@ -33,6 +57,15 @@ fn App() -> Html {
                 </div>
             }
         </>
+    }
+}
+
+#[function_component]
+fn App() -> Html {
+    html! {
+        <BrowserRouter>
+            <Switch<Route> render={switch} /> // <- must be child of <BrowserRouter>
+        </BrowserRouter>
     }
 }
 

@@ -3,4 +3,8 @@ pub mod list;
 pub mod items;
 pub mod display;
 pub mod rating;
-
+pub mod post;
+pub mod idea;
+pub mod error;
+pub mod report;
+pub mod nav;

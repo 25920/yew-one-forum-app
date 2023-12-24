@@ -12,7 +12,6 @@ pub struct Feedback {
 pub struct Post { // anonymous
     pub id: uuid::Uuid,
     pub text: String,
-    pub num_post: String,
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize, Default, Clone)]
@@ -25,8 +24,15 @@ pub struct AlertInput {
 #[store(storage = "local", storage_tab_sync)]
 pub struct Store {
     pub feedbacks: Vec<Feedback>,
+    pub posts: Vec<Post>,
     pub loading: bool,
     pub alert_input: AlertInput,
+}
+
+pub fn set_post(post:Post, dispatch: Dispatch<Store>) {
+    dispatch.reduce_mut(move |store: &mut Store| {
+        store.posts.insert(0, post);
+    })
 }
 
 pub fn set_feedback(feedback: Feedback, dispatch: Dispatch<Store>) {

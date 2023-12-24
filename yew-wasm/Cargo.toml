@@ -12,4 +12,5 @@ uuid = { version = "1.6.1", features = ["serde", "v4"] }
 wasm-bindgen = "0.2.89"
 web-sys = { version = "0.3.66", features = ["HtmlInputElement", "Window"] }
 yew = { version = "0.21.0", features = ["csr"] }
+yew-router = "0.18.0"
 yewdux = "0.9.4"

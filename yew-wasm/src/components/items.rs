@@ -1,5 +1,4 @@
 use yew::prelude::*;
-use yewdux::prelude::*;
 
 use crate::store::Feedback;
 
