@@ -19,11 +19,13 @@ pub fn PostItem(props: &Props) -> Html {
             </p>
             <ul>
             {
-                comment_list.resps.iter().map(|c| html! {
+                comment_list.resps.iter().map(|c| {
+                    let val = c.comment.to_string();
+                    html! {
                     <li>
-                      <p>{c.comment}</p>
+                      <p>{val}</p>
                     </li>
-                  }).collect::<Html>()
+                  }}).collect::<Html>()
             }
             </ul>
         </div>
