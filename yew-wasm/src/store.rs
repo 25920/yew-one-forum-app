@@ -18,7 +18,7 @@ pub struct Post { // anonymous
 #[derive(Debug, Deserialize, Serialize, PartialEq, Clone)]
 pub struct Comment { // anonymous
     pub id: uuid::Uuid,
-    pub text: String,
+    pub comment: String,
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize, Default, Clone)]

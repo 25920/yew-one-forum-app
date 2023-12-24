@@ -11,11 +11,21 @@ pub struct Props {
 
 #[function_component]
 pub fn PostItem(props: &Props) -> Html {
+    let comment_list = &props.post.clone();
     html! {
         <div class="bg-white text-gray-700 rounded-lg p-8 my-5 relative">
             <p>
                 {&props.post.text} {&props.post.id}
             </p>
+            <ul>
+            {
+                comment_list.resps.iter().map(|c| html! {
+                    <li>
+                      <p>{c.comment}</p>
+                    </li>
+                  }).collect::<Html>()
+            }
+            </ul>
         </div>
     }
 }
