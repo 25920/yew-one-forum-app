@@ -73,7 +73,7 @@ pub fn FeedbackForm() -> Html {
     html! {
         <div class="bg-white text-gray-700 rounded-lg p-8 my-5 relative">
             <header class="max-w-md mx-auto">
-                <h2 class="text-center text-2xl font-bold">{"How would you rate your service with us?"}</h2>
+                <h2 class="text-center text-2xl font-bold">{"How would you rate this service?"}</h2>
             </header>
             <form onsubmit={on_submit}>
                 <Rating selected={*rating} onchange={handle_select} />

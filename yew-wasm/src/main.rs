@@ -6,6 +6,7 @@ use components::{
     idea::PostList,
     report::FeedBackIndex,
     error::Error,
+    nav::TopNav,
 };
 use store::Store;
 use yew::prelude::*;
@@ -64,6 +65,7 @@ fn Home() -> Html {
 fn App() -> Html {
     html! {
         <BrowserRouter>
+            <TopNav/>
             <Switch<Route> render={switch} /> // <- must be child of <BrowserRouter>
         </BrowserRouter>
     }

@@ -12,6 +12,13 @@ pub struct Feedback {
 pub struct Post { // anonymous
     pub id: uuid::Uuid,
     pub text: String,
+    pub resps: Vec<Comment>,
+}
+
+#[derive(Debug, Deserialize, Serialize, PartialEq, Clone)]
+pub struct Comment { // anonymous
+    pub id: uuid::Uuid,
+    pub text: String,
 }
 
 #[derive(Debug, PartialEq, Serialize, Deserialize, Default, Clone)]

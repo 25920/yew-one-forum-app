@@ -14,7 +14,7 @@ pub fn PostItem(props: &Props) -> Html {
     html! {
         <div class="bg-white text-gray-700 rounded-lg p-8 my-5 relative">
             <p>
-                {&props.post.text}
+                {&props.post.text} {&props.post.id}
             </p>
         </div>
     }

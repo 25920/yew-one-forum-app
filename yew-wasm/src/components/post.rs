@@ -45,6 +45,7 @@ pub fn PostForm() -> Html {
             let new_feedback = Post {
                 id: Uuid::new_v4(),
                 text: text.to_string(),
+                resps: Vec::new(),
             };
 
             set_post(new_feedback, dispatch.clone());
