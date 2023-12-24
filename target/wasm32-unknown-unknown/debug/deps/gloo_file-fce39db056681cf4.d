@@ -1,0 +1,11 @@
+/home/water/Desktop/Rust-Web2/yew-wasm/target/wasm32-unknown-unknown/debug/deps/libgloo_file-fce39db056681cf4.rmeta: /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/lib.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/blob.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_list.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_reader.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/object_url.rs
+
+/home/water/Desktop/Rust-Web2/yew-wasm/target/wasm32-unknown-unknown/debug/deps/libgloo_file-fce39db056681cf4.rlib: /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/lib.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/blob.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_list.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_reader.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/object_url.rs
+
+/home/water/Desktop/Rust-Web2/yew-wasm/target/wasm32-unknown-unknown/debug/deps/gloo_file-fce39db056681cf4.d: /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/lib.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/blob.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_list.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_reader.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/object_url.rs
+
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/lib.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/blob.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_list.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/file_reader.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gloo-file-0.3.0/src/object_url.rs:

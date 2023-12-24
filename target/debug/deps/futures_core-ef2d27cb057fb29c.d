@@ -1,0 +1,11 @@
+/home/water/Desktop/Rust-Web2/target/debug/deps/libfutures_core-ef2d27cb057fb29c.rmeta: /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/lib.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/future.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/stream.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/mod.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/poll.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/mod.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/atomic_waker.rs
+
+/home/water/Desktop/Rust-Web2/target/debug/deps/futures_core-ef2d27cb057fb29c.d: /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/lib.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/future.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/stream.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/mod.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/poll.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/mod.rs /home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/atomic_waker.rs
+
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/lib.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/future.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/stream.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/mod.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/poll.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/mod.rs:
+/home/water/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-core-0.3.29/src/task/__internal/atomic_waker.rs:
