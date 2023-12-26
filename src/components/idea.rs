@@ -1,12 +1,23 @@
 use yew::prelude::*;
 use yewdux::prelude::*;
-
 use crate::store::Post;
 use crate::store::Store;
+use crate::store::Comment;
+use crate::store::set_comment;
+use crate::store::set_loading;
+use crate::store::set_show_alert;
+use uuid::Uuid;
+use wasm_bindgen::JsCast;
+use web_sys::HtmlInputElement;
 
 #[derive(Debug, PartialEq, Properties)]
 pub struct Props {
     pub post: Post,
+}
+
+#[derive(Debug, PartialEq, Properties)]
+pub struct CProps {
+    pub comment: Comment,
 }
 
 #[function_component]
