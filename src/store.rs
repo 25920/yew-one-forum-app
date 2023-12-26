@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 use yewdux::prelude::*;
+use uuid::Uuid;
 
 #[derive(Debug, Deserialize, Serialize, PartialEq, Clone)]
 pub struct Feedback {
@@ -39,6 +40,23 @@ pub struct Store {
 pub fn set_post(post:Post, dispatch: Dispatch<Store>) {
     dispatch.reduce_mut(move |store: &mut Store| {
         store.posts.insert(0, post);
+    })
+}
+
+pub fn set_comment(new_c: Comment, 
+    dispatch: Dispatch<Store>, id:Uuid) {
+    // dispatch.reduce_mut(move |store: &mut Store| {
+    //     let k = store.posts.iter().find(|instance| instance.id == id);
+    //     store.posts[k].resps.insert(0,comment);
+    // })
+    dispatch.reduce_mut(move |store: &mut Store| {
+        if let Some(index) = store.posts.iter().position(
+            |p| p.id == id
+        ) {
+            let mut modified = store.posts[index].clone();
+            modified.resps.push(new_c);
+            store.posts[index]=modified;
+        }
     })
 }
 
