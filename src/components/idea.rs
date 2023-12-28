@@ -22,57 +22,7 @@ pub struct CProps {
 
 #[function_component]
 pub fn PostItem(props: &Props) -> Html {
-    let (store, dispatch) = use_store::<Store>();
-    let loading = &store.loading;
-    let text = use_state(String::new);
-    let message = use_state(|| Option::<String>::None);
-    let text_input_ref = use_node_ref();
-
-    let handle_input = {
-        let text = text.clone();
-        let message = message.clone();
-        Callback::from(move |event: InputEvent| {
-            let target = event.target().unwrap();
-            let value = target.unchecked_into::<HtmlInputElement>().value();
-            message.set(None);
-            text.set(value);
-        })
-    };
-
-    let on_submit = {
-        let cloned_dispatch = dispatch.clone();
-        let text = text.clone();
-        let message = message.clone();
-        let text_input_ref = text_input_ref.clone();
-
-        Callback::from(move |event: SubmitEvent| {
-            let dispatch = cloned_dispatch.clone();
-            event.prevent_default();
-            set_loading(true, dispatch.clone());
-
-            if text.trim().len() < *&3 {
-                message.set(Some("Text must be at least 3 characters".to_string()));
-                set_loading(false, dispatch.clone());
-                return;
-            }
-
-            let new_feedback = Post {
-                id: Uuid::new_v4(),
-                text: text.to_string(),
-                resps: Vec::new(),
-            };
-
-            set_comment(new_feedback, dispatch.clone());
-            set_show_alert("Post added successfully".to_string(
-
-            ), dispatch.clone());
-
-            let text_input = text_input_ref.cast::<HtmlInputElement>().unwrap();
-            text_input.set_value("");
-            text.set(String::new());
-            set_loading(false, dispatch);
-        })
-    };
+    
 
     let comment_list = &props.post.clone();
     html! {
