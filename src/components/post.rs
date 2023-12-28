@@ -42,13 +42,13 @@ pub fn PostForm() -> Html {
                 return;
             }
 
-            let new_feedback = Post {
+            let new_post = Post {
                 id: Uuid::new_v4(),
                 text: text.to_string(),
                 resps: Vec::new(),
             };
 
-            set_post(new_feedback, dispatch.clone());
+            set_post(new_post, dispatch.clone());
             set_show_alert("Post added successfully".to_string(
 
             ), dispatch.clone());
@@ -73,7 +73,7 @@ pub fn PostForm() -> Html {
                         ref={text_input_ref}
                         oninput={handle_input}
                         class="flex-grow border-none text-lg focus:outline-none"
-                        placeholder="Tell us something that keeps you coming back"
+                        placeholder="Tell us something"
                     />
                 <button
                     type="submit"
@@ -89,7 +89,7 @@ pub fn PostForm() -> Html {
                 </div>
                 {if let Some(msg) = message.as_ref() {
                     html! { <div class="pt-3 text-center
-                     text-purple-600">{msg.clone()}</div> }
+                     text-purple-600">{"mps: "} {msg.clone()}</div> }
                 } else {
                     html! {}
                 }}
